@@ -6,16 +6,16 @@ OKnesset.app.controllers.Homepage = Ext.regController('Homepage', {
             this.homepage = this.render({
                 xtype: 'HomePage',
             });
-            this.homepage.items.get(1).items.getByKey('homepageAgendaBtn').setHandler(function(){
+            this.homepage.items.get(2).items.getByKey('homepageAgendaBtn').setHandler(function(){
                 OKnesset.app.controllers.navigation.dispatchPanel('AgendaList/Index');
             });
-            this.homepage.items.get(1).items.getByKey('homepagePartiesBtn').setHandler(function(){
+            this.homepage.items.get(2).items.getByKey('homepagePartiesBtn').setHandler(function(){
                 OKnesset.app.controllers.navigation.dispatchPanel('PartyList/Index');
             });
-            this.homepage.items.get(2).items.getByKey('homepageCommitteesBtn').setHandler(function(){
+            this.homepage.items.get(3).items.getByKey('homepageCommitteesBtn').setHandler(function(){
                 OKnesset.app.controllers.navigation.dispatchPanel('AllCommittees/Index');
             });
-            this.homepage.items.get(2).items.getByKey('homepageMembersBtn').setHandler(function(){
+            this.homepage.items.get(3).items.getByKey('homepageMembersBtn').setHandler(function(){
                 OKnesset.app.controllers.navigation.dispatchPanel('MemberList/Index');
             });
         }

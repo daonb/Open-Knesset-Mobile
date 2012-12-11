@@ -6,6 +6,11 @@ var homepagePanelHTml = " \
 <div style='top: 6em; position: absolute; text-align: center'>" + OKnesset.strings.Homepagetagline + "</div> \
 ";
 
+var homepageElectionGameBtnHtml = " \
+<span><b>" + OKnesset.strings.ElectionGameTitle +"</b><br/><br/>\
+<span style='font-size:0.8em'>"+ OKnesset.strings.ElectionGameBtnText +"</span></span> \
+";
+
 var homepageAgendaBtnHtml = " \
 <span><b>" + OKnesset.strings.AgendaTitle +"</b><br/><br/>\
 <span style='font-size:0.8em'>"+ OKnesset.strings.HomepageAgendaBtnText +"</span></span> \

@@ -24,6 +24,21 @@ OKnesset.app.views.HomepageView = new Ext.extend(Ext.Panel, {
           align: 'stretch'
       },
       items: [{
+        id: 'electionGame',
+        flex : 1,
+        margin: "10 10 10 10",
+        xtype: 'button',
+        cls : 'homepageBtn',
+        html : homepageElectionGameBtnHtml,
+      }]},
+      {
+      flex : 1,
+      xtype : 'panel',
+      layout: {
+          type: 'hbox',
+          align: 'stretch'
+      },
+      items: [{
         id: 'homepagePartiesBtn',
         flex : 1,
         margin: "10 10 10 10",
