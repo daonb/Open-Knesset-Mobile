@@ -6,6 +6,9 @@ OKnesset.app.controllers.Homepage = Ext.regController('Homepage', {
             this.homepage = this.render({
                 xtype: 'HomePage',
             });
+            this.homepage.items.get(1).items.getByKey('electionGameBtn').setHandler(function(){
+                OKnesset.app.controllers.navigation.dispatchPanel('ElectionGame/Index');
+            });
             this.homepage.items.get(2).items.getByKey('homepageAgendaBtn').setHandler(function(){
                 OKnesset.app.controllers.navigation.dispatchPanel('AgendaList/Index');
             });
